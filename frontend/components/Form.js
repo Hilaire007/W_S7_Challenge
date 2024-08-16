@@ -124,7 +124,7 @@ export default function Form() {
         <div>
           <label htmlFor="size">Size</label>
           <br />
-          <select onChange={onChange} name="size" id="size">
+          <select onChange={onChange} value="size" name="size" id="size">
             <option value="">----Choose Size----</option>
             {/* Fill out the missing options */}
             <option value="S">Small</option>
@@ -140,6 +140,7 @@ export default function Form() {
         {toppings.map((topping) => (
           <div key={topping.topping_id}>
             <input
+              checked={formData.topping_id}
               onChange={onChange}
               value={topping.topping_id}
               type="checkbox"
