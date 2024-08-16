@@ -42,6 +42,10 @@ function sum(a, b) {
   }
   return a + b
 }
+test ("Sum of two numbers", async () => {
+  
+})
+
 
 function HelloWorld() {
   return (
