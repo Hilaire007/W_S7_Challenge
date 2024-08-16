@@ -1,8 +1,7 @@
-import React from 'react'
-import Home from './Home'
-import Form from './Form'
-import { Routes, Route, Link, } from 'react-router-dom'
-
+import React from "react";
+import Home from "./Home";
+import Form from "./Form";
+import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
@@ -18,7 +17,7 @@ function App() {
         <Route path="/order" element={<Form />} />
       </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
